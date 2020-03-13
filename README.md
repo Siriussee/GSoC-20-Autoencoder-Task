@@ -16,7 +16,7 @@ An encoder takes the raw data (x) as input and outputs the encoded data (a), whi
 
 When training, the autoencoder network encodes, then decodes the raw data, and update the weights to minimize the differences between the raw data and decoded ones. After that, the well-trained autoencoder is able to encode data into a smaller size and decode them to the original ones when needed.
 
-![img](https://lh5.googleusercontent.com/aJ3u7DsRorFag6lqV4PCxqdIDSTpvKC0_-FdAQlaRJotPfan8d8MqVN--PXVMz2wGafSMcIRa-YLjsV-0wF15m_osOa5iiSuPVF1t2ObN0rO8OKRSJN-8pkR66_PBO-vrtAJZ_vKNYo)
+![img](assets/p00.png)
 
 ## Structure of the AE_3D_200 Autoencoder
 
@@ -24,7 +24,7 @@ The raw data are 139723  four-dimensional vectors, representing the E, p_t, eta 
 
 The AE_3D_200 autoencoder is a fully-connected network, with 50, 100, 200, 3 ,200, 100, 50 neurons in each hidden layer respectively. The activation function is tanh(x). An illustration of the network structure is shown in the figure. 
 
-![img](assets/pasted image 0-1584108011505.png)
+![img](assets/p1.png)
 
 ## Effectiveness of AE_3D_200 Autoencoder
 
@@ -32,7 +32,7 @@ It achieved 6.8E-7 at test loss after about 750 epochs of training, which means 
 
 The distributions of the raw data and  that of  the decode data are significantly close. Fig.2(1)-(4) show the distribution of all four dimensions of both data. As can be seen, the decoded data cover most of the raw data in distribution.
 
-![img](assets/pasted image 0.png)
+![img](assets/p0.png)
 
 ![1584107805636](assets/1584107805636.png)
 
